@@ -1,0 +1,261 @@
+.container{
+  margin: 0 2rem;
+}
+   
+  .app::before{
+    content: '';
+    background: url(./assets/mountain1.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+   
+
+  }
+  .app{
+    z-index: 1;
+
+  }
+  .input  {
+    padding: .5rem;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, .1);
+    color: #fff;
+    font-size: 1.2rem;
+    border-color: rgba(0, 0, 0, .5);
+    outline: none;
+    
+  }
+  
+ .search{
+  justify-content: center;
+  text-align: center;
+  padding-top:1rem;
+ }
+ .city{
+  font-size: 2rem;
+  font-weight: 600;
+ margin-top:3rem ;
+ color: #fa9f00;
+ padding-left: 8px;
+ }
+ .temprature{
+  font-size: 2.1rem;
+ }
+ .temprature h1{
+  margin: 0 0;
+  color: #e8e800 ;
+  padding-top: 0;
+ }
+ .content{
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  background: rgba(0, 0, 0, .2);
+  border-radius: 1rem;
+  padding: 1rem;
+  color: #fff;
+ 
+ }
+ .content h4{
+  font-size: 1.7rem;
+ }
+ .content p{
+  font-size: 1.2rem;
+  margin-top: -2rem;
+  color: #fa9f00;
+ 
+ }
+ .tempratures{
+  display: flex;
+  gap: 2rem;
+ 
+ }
+ .tempratures span{
+  margin-top: -1rem;
+ }
+.tempratures p{
+  margin-top: 0;
+  color: #fa9f00;
+  font-size:1.2rem ;
+}
+.tempratures h4{
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+.weather {
+ 
+ text-align: center;
+ width: 2rem;
+ font-size: 2rem;
+ 
+ color:  #f5f500;
+ 
+}
+.weather h4{
+  margin-top: 0;
+}
+ 
+
+
+ @media screen and (max-width:350px) {
+  .app::before{
+    content: '';
+    background: url(./assets/mountain1.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .container{
+    margin: 0 .3rem;
+  }
+  .content p{
+    font-size: .9rem;
+    margin-top: -1.5rem;
+  }
+  .content h4{
+    font-size: 1.2rem;
+  }
+  .city{
+    font-size: 1.5rem;
+    padding-top: 4rem;
+  }
+  .temprature{
+    font-size: 1.7rem;
+  }
+  .tempratures h4{
+    font-size: 1.4rem;
+  }
+  .tempratures p{
+    font-size:1rem ;
+  }
+  .weather{
+    font-size: 1.6rem;
+  }
+.input{
+  font-size: 1rem;
+}
+
+  
+ }
+
+ @media screen and (min-width:450px){
+  .content{
+    justify-content: center;
+    gap: 4rem;
+  }
+ }
+
+ @media screen and (min-width:850px){
+ .input{
+  padding: .8rem 1.3rem;
+  font-size: 1.6rem;
+ }
+ .temprature ,.tempratures ,.city ,.weather{
+  margin-left: 8rem;
+ }
+ .city{
+  font-size: 3rem;
+ }
+ .temprature{
+  font-size: 3rem;
+
+ }
+ .tempratures{
+  margin-top: -2rem;
+ }
+ .tempratures h4{
+  font-size: 2rem;
+  
+ }
+ .tempratures p{
+  font-size: 2rem;
+  font-weight: 800;
+  color: #f5f500;
+ }
+ .weather{
+  font-size: 2.3rem;
+  color: #fa9f00;
+  
+ }
+ .weather h4{
+  margin-bottom: 1rem;
+ }
+ .content{
+  margin-top: 1.5rem;
+  width: 80%;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+ }
+ .content h4{
+  font-size: 2rem;
+ }
+ .content p{
+  font-size: 1.5rem
+ };
+
+ }
+
+ @media screen and (min-width:1500px){
+  .input{
+   padding: 2rem 4rem;
+   font-size: 4rem;
+   border-radius: 3rem;
+   margin-top: 6rem;
+  }
+  .temprature ,.tempratures ,.city ,.weather{
+   margin-left: 18rem;
+  }
+  .city{
+   font-size: 8rem;
+  }
+  .temprature{
+   font-size: 8rem;
+ 
+  }
+  .tempratures{
+   margin-top: -2rem;
+   gap: 10rem;
+  }
+  .tempratures h4{
+   font-size: 7rem;
+   
+  }
+  .tempratures p{
+   font-size: 6rem;
+   font-weight: 800;
+   color: #f5f500;
+  }
+  .weather{
+   font-size: 7rem;
+   color: #fa9f00;
+   
+  }
+  .weather h4{
+   margin-bottom: 8rem;
+  }
+  .content{
+   margin-top: 3rem;
+   width: 80%;
+   text-align: center;
+   align-items: center;
+   margin: auto;
+   gap: 10rem;
+  }
+  .content h4{
+   font-size: 7rem;
+  }
+  .content p{
+   font-size: 6rem
+  };
+ 
+  }
+ 
